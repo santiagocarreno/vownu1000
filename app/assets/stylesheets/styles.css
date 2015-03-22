@@ -93,21 +93,31 @@ pre code {
 /* ======= New Header ======= */
 #newheader{
 
-background-image: url("http://catalogomedia.canaimaeducativo.gob.ve/usr/share/contenido-educativo/primero/contenidos/estudiantes/infografias/lenguaje-y-comunicacion/los-personajes-en-las-canciones-de-ali-primera-el-lago-de-maracaibo/imagenes/png/barra-negra.png");
-font-family: 'Montserrat';
-}
+font-family: 'Tangerine';
+color: #fff;
+background: #fff;
 
+
+}
 /* ======= END New Header ======= */
+
+/* ======= menupalabras ======= */
+#menupalabras{
+
+font-family: 'Tangerine';
+
+
+}
+/* ======= END menupalabras ======= */
 
 /* ======= Header ======= */
 .header {
   padding: 10px 0;
-  /*background: #17baef;*/
-  background-image: url("http://catalogomedia.canaimaeducativo.gob.ve/usr/share/contenido-educativo/primero/contenidos/estudiantes/infografias/lenguaje-y-comunicacion/los-personajes-en-las-canciones-de-ali-primera-el-lago-de-maracaibo/imagenes/png/barra-negra.png");
+  background: #17baef;
   color: #fff;
   position: fixed;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Tangerine', sans-serif;
 
 
 }
@@ -193,6 +203,22 @@ font-family: 'Montserrat';
   margin-right: 0;
 }
 /* ======= Promo Section ======= */
+/* =======  BOTONINICIO ======= */
+#botoninicio {
+
+color: #fff;
+
+
+
+}
+#botoninicio {
+
+color: #fff;
+
+
+
+}
+/* =======  ENDBOTONINICIO ======= */
 .promo {
   /*background: #17baef;*/
   /*Caja que contiente el primer slide/vista del landing page */
@@ -200,7 +226,7 @@ font-family: 'Montserrat';
   /*background-image: url("http://i724.photobucket.com/albums/ww243/Duckyboy1989/fondogeneral-1_zpsly8nczqr.jpg");*/
   color: #fff;
   height: 980px;
-  padding-top: 20%;
+  padding-top: 22%;
 }
 .promo .title {
   font-size: 98px;
