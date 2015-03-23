@@ -2,75 +2,29 @@
 
 <!-- XxxxxxxxxxxxxxxxxxX -->
 <section id="promo" class="promo section offset-header">
-        <div class="container text-center">
+  <div class="container text-center">
+
+
+    <h1>Ingresa con Twitter </h1>
+  </p>
    
-<!--   
-    <section id="login">
-    <div class="container">
-      <div class="row">
-          <div class="col-xs-12">
-              <div class="form-wrap">
-                <h1>Iniciar sesión</h1>
-                    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html:{id: 'login form'}) do |f| %>
-                        <div class="form-group">
-                          <%= f.label :email, class: 'sr-only' %>
-                          <%= f.email_field :email, autofocus: true, name: "email", id: "email", class: "form-control", placeholder: "somebody@example.com" %>
-                            
-                        </div>
-                        <div class="form-group">
-                          <%= f.label :password, class: 'sr-only' %>
-                          <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password', name: "key", id: "key"  %>
-                           
-                        </div>
-                        <div class="checkbox">
-                          
-                            <% if devise_mapping.rememberable? %>
-                            
-                              <span><%= f.check_box :remember_me, class: "character-checkbox" %></span>
-                              <span><%= f.label :remember_me, class: 'label'%></span>
-                            
-                            <% end -%>
-                        </div>
-                       
+   <div class="row-fluid" id="lineabotont">
+             
+       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 " id="botondonante3"> 
+          
+       </div>
+               
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="vowlogo3">
+           <%= render "devise/shared/links_sessions" %>
+       </div>
+                
+       <div class="col-lg-3 col-md-3 col-md-3 col-xs-3" id="botonfundacion3">
+           
+      </div>
 
-                            <%= f.submit "Log in", class: 'btn btn-custom btn-lg btn-block', id: 'btn-login' %>
-                        <% end %>
--->
-
-
-  <div class="actions form-group forget">
-    <div class="col-sm-offset-2 col-sm-10 forget">
-      <%= render "devise/shared/links_sessions" %>
-    </div>
   </div>
 
-<!--
-                    </form>
-                    
-                    <hr>
-              </div>
-        </div> <!-- /.col-xs-12 -->
-<!--        
-      </div> <!-- /.row -->
-<!--      
-    </div> <!-- /.container -->
-<!--    
+ </div>    
 </section>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div><!--//container-->     
-</section><!--//promo-->
 
 <!-- esta es la vista de iniciar sesion Usuario -->
