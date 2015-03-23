@@ -5,12 +5,9 @@
         <div class="container text-center">
    
 
-
-
-
 <div align="center">
 
-<%= render "/shared/navbar" %> 
+
 
 <div id="formulario_fundacion" class="container">
 
@@ -18,44 +15,49 @@
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 		<%= simple_form_for @contact do |f| %>
 			<h2>Registro de Fundación </h2>
-
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<div class="form-group">
-						<%= f.input :name, class: 'form-control input-lg', id: "first_name", placeholder: "Nombres",  required: true %>
-                        
+            <br>
+          
+				<form>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="form-group">
+								<%= f.input :name, class: 'form-control input-lg', id: "first_name", placeholder: "Nombres",  required: true %>
+		                        
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="form-group">
+								<%= f.input :last_name, class: 'form-control input-lg', id: "last_name", placeholder: "Apellidos",  required: true %>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
 					<div class="form-group">
-						<%= f.input :last_name, class: 'form-control input-lg', id: "last_name", placeholder: "Apellidos",  required: true %>
+						<%= f.input :foundation_name, class: 'form-control input-lg', id: "foundation_name", placeholder: "Nombre de la Fundación",  required: true, tabindex:"3" %>
+
+						
 					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<%= f.input :foundation_name, class: 'form-control input-lg', id: "foundation_name", placeholder: "Nombre de la Fundación",  required: true, tabindex:"3" %>
+					<div class="form-group">
+						
+						<%= f.input :email, id: "email", class: 'form-control input-lg', placeholder: "Email",  required: true, tabindex:"4" %>
+					</div>
+					<div class="form-group">
 
-				
-			</div>
-			<div class="form-group">
-				
-				<%= f.input :email, id: "email", class: 'form-control input-lg', placeholder: "Email",  required: true, tabindex:"4" %>
-			</div>
-			<div class="form-group">
+						<%= f.input :phone, id: "phone", class: 'form-control input-lg', placeholder: "Teléfono de Contacto",  required: true, tabindex:"4" %>
 
-				<%= f.input :phone, id: "phone", class: 'form-control input-lg', placeholder: "Teléfono de Contacto",  required: true, tabindex:"4" %>
+					</div>
+				</form>
+	
 
-			</div>
-			
+		
 			<div class="row">
+				<div class="col-xs-10 col-sm-10 col-md-10">
+					 Al hacer click en Registrarme, usted acepta los <a href="#" data-toggle="modal" data-target="#t_and_c_m" id="terminosycondiciones">Términos y Condiciones de Uso</a> de este sitio y nuestra política de privacidad.
+				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<span class="button-checkbox">
 						<span   data-color="info" tabindex="7">Acepto</span>
                         <input type="checkbox" name="t_and_c" id="t_and_c"  value="1">
 					</span>
-				</div>
-				<div class="col-xs-10 col-sm-10 col-md-10">
-					 Al hacer click en <strong class="label label-primary">Registrarme</strong>, ud acepta los <a href="#" data-toggle="modal" data-target="#t_and_c_m">Términos y Condiciones de Uso</a> de este sitio y nuestra política de privacidad.
 				</div>
 			</div>
 			
