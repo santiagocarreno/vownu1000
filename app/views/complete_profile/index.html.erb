@@ -14,17 +14,23 @@
 	<div class="login-container">
             <div id="output"></div>
             <div class="avatar"><img src=<%="#{@user.photo_url}"%> style="width:10%"></div>
+            <br>
+            <br>
+            <div class="row">
             <div class="form-box">
             	<%= form_for(@user, url: {action: :save}, method: :patch) do |f|%>
             	<%= f.label "Correo electrónico"%>
             	<% corr = ""%>
             	<% corr = @user.email if @user.email != "#{@user.username}@email.com"%>
-                 
-            	<%= f.text_field :email, :value => corr, placeholder: "vownu@email.com"%>
+              <%= f.text_field :email, :value => corr, placeholder: "vownu@email.com"%>
+            </div>  
+              <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
             	<%= f.label "Nombre Completo"%>
             	<%= f.text_field :name, :value => "#{@user.name}", placeholder: "Pepito Paez"%>
-
-
+              </div>  
+              </div>
+          
             	<%#= f.submit "Actualizar Datos", class:"btn login", id:"actualizar_datos" %>
             	<%# end %>
                    
